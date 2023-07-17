@@ -27,6 +27,7 @@ nav {
   display: flex;
   width: 80%;
   margin: 0px auto;
+  padding: 20px 0;
 }
 
 .container_img {
@@ -36,6 +37,7 @@ nav {
 
 .container_details {
   padding: 4rem;
+  width: 50%;
 }
 
 .container_header {
@@ -47,4 +49,24 @@ nav {
 .location_icon {
   color: #f55a5a;
   font-size: 2.5rem;
+}
+
+.linebreak {
+  width: 80%;
+  /* margin: 10px; */
+}
+
+.googleview {
+  color: gray;
+  text-decoration: underline;
+}
+
+.location {
+  font-weight: bold;
+}
+
+.visitdate {
+  font-weight: bold;
+  font-size: large;
+  color: #f55a5a;
 }

@@ -1,28 +1,25 @@
 import React from "react";
 
-export default function Main() {
+export default function Main(props) {
   return (
-    <main className="main">
-      <div className="container">
-        <img
-          className="container_img"
-          src="https://source.unsplash.com/WLxQvbMyfas"
-        />
-        <div className="container_details">
-          <div className="container_header">
-            <i className="fa-solid fa-location-dot location_icon"></i>
-            <h3>Japan</h3>
-            <a href="#">View on Google Map</a>
+    <main>
+      <div className="main">
+        <div className="container">
+          <img className="container_img" src={props.item.imglink} />
+          <div className="container_details">
+            <div className="container_header">
+              <i className="fa-solid fa-location-dot location_icon"></i>
+              <h3>{props.item.country}</h3>
+              <a className="googleview" href={props.item.googlemapLink}>
+                View on Google Map
+              </a>
+            </div>
+            <h1 className="location">{props.item.place}</h1>
+            <p className="visitdate">{props.item.visitDate}</p>
+            <p>{props.item.description}</p>
           </div>
-          <h1>Mount Fuji</h1>
-          <p>12 Jan, 2021 - 24 Jan, 2021</p>
-          <p>
-            Mount Fuji is the tallest mountain in Japan, standing at 3,776
-            meters (12,380 feet). Mount Fuji is the single most popular tourist
-            site in Japan, for both Japanese and foreign tourists.
-          </p>
-          <hr />
         </div>
+        <hr className="linebreak" />
       </div>
     </main>
   );
