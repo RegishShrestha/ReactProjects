@@ -60,7 +60,7 @@ card_container {
   color: #918e9b;
 }
 
-.card_badge {
+/* .card_badge {
   position: absolute;
   top: 6px;
   left: 6px;
@@ -68,4 +68,4 @@ card_container {
   padding: 5px 7px;
   border-radius: 2px;
   font-weight: bold;
-}
+} */
