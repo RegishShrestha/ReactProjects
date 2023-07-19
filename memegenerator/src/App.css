@@ -43,10 +43,11 @@ body {
   cursor: pointer;
 }
 
-.meme--image {
-  max-width: 100%;
-  border-radius: 3px;
+.meme {
+  position: relative;
+  text-align: center;
 }
+
 .meme--text {
   position: absolute;
   width: 80%;
@@ -63,6 +64,11 @@ body {
   text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
     -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
     2px 2px 5px #000;
+}
+.meme--image {
+  max-width: 100%;
+  border-radius: 3px;
+  height: 30vh;
 }
 
 .bottom {

@@ -12,7 +12,7 @@ export default function Meme() {
       .then((res) => res.json())
       .then((data) => setAllMeme(data.data.memes));
   }, []);
-
+  console.log(allMemes);
   function generate_image() {
     const randomNumber = Math.floor(Math.random() * allMemes.length);
     const url = allMemes[randomNumber].url;
@@ -33,6 +33,7 @@ export default function Meme() {
           placeholder="Top Text"
           className="form_input"
           name="topText"
+          value={meme.topText}
           onChange={handleChange}
         ></input>
         <input
@@ -40,16 +41,17 @@ export default function Meme() {
           placeholder="Bottom Text"
           className="form_input"
           name="bottomText"
+          value={meme.bottomText}
           onChange={handleChange}
         ></input>
-        <button onClick={generate_image} className="form_button">
+        <button className="form_button" onClick={generate_image}>
           Get a new meme image 🖼
         </button>
       </div>
       <div className="meme">
-        <img src={meme.randomImage} className="meme--image" />
-        <h2 className="meme--text top">One does not simply</h2>
-        <h2 className="meme--text bottom">Walk into Mordor</h2>
+        <img src={meme.randomImage} />
+        <h2 className="meme--text top">{meme.topText}</h2>
+        <h2 className="meme--text bottom">{meme.bottomText}</h2>
       </div>
     </main>
   );
