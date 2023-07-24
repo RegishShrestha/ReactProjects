@@ -92,7 +92,7 @@ visit the site:
 #Tenzies
 Tenzies is a dice rolling game where a player has to roll all 10 dices untill all of them are of same numbers. Players can hold their dice so that the hold dice are not rolled. When all dice are at hold and all dice have same value the player wins the game.
 
-
+#Vans site 
 
 
 
